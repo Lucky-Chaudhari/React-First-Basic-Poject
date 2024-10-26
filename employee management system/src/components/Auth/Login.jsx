@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Login= ()=> {
+const Login = ({handleLogin})=> {
 
 
 
@@ -10,6 +10,7 @@ const Login= ()=> {
   const submitHandler=(e)=>{
      e.preventDefault()
 
+     handleLogin(email , password)
      setEmail(" ");
 
      setPassword("");
